@@ -1,2 +1,120 @@
-<!-- AN HTML COMMENT -->
- 
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+    html, body {
+      height: 100%; 
+      width: 100%;
+    }
+
+    .List {
+        width: 275px;
+        height: 350px;
+        border-radius: 5px;
+        background: #ffffff;
+        display: grid;
+        grid-template-columns: repeat(3, 105px);
+        grid-template-rows: auto;
+        column-gap: 18px;
+        row-gap: 35px;
+        padding: 17px 7px;
+        justify-content: start;
+        align-content: center;
+    }
+
+    .PolaroidCard {
+      width: 100px;
+      height: 160px;
+      background-color: #ffffff;
+    }
+
+    .Polaroid {
+        width: 101px;
+        height: 126px;
+        background: #ffffff;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 
+                    0px 4px 12px rgba(0, 0, 0, 0.1); 
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+        padding-top: 8px;
+        position: relative;
+        border-radius: 0;
+    }
+
+    .PolaroidCrd {
+      width: 94px;
+      height: auto;
+      aspect-ratio: 1 / 1.1;
+      object-fit: cover; 
+      border-radius: 0;  
+    }
+
+    .title {
+      color: #28446a;
+      text-align: center;
+      font-family: Nunito, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 8px;
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+
+    .WarningLabel {
+      position: absolute;
+      top: 10px; 
+      left: 6px; 
+      width: 20px; 
+      height: 20px; 
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="List">
+    <div class="PolaroidCard">
+      <div class="Polaroid">
+        <img class="PolaroidCrd" src="images/deathcap.png" alt="Death Cap">
+        <img class="WarningLabel" src="images/vector.png" alt="Warning">
+      </div>
+      <p class="title">Death Cap</p>
+    </div>
+
+    <div class="PolaroidCard">
+      <div class="Polaroid">
+        <img class="PolaroidCrd" src="images/paddy.png" alt="Paddy Straw">
+      </div>
+      <p class="title">Paddy Straw</p>
+    </div>
+
+    <div class="PolaroidCard">
+      <div class="Polaroid">
+        <img class="PolaroidCrd" src="images/destroying.png" alt="Destroying Angel">
+        <img class="WarningLabel" src="images/vector.png" alt="Warning">
+      </div>
+      <p class="title">Destroying Angel</p>
+    </div>
+
+    <div class="PolaroidCard">
+      <div class="Polaroid">
+        <img class="PolaroidCrd" src="images/falsedeath.png" alt="False Death Cap">
+        <img class="WarningLabel" src="images/vector.png" alt="Warning">
+      </div>
+      <p class="title">False Death Cap</p>
+    </div>
+
+    <div class="PolaroidCard">
+      <div class="Polaroid">
+        <img class="PolaroidCrd" src="images/puffball.png" alt="Puffball">
+      </div>
+      <p class="title">Puffball</p>
+    </div>
+  </div>      
+</body>
